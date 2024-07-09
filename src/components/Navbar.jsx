@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import { HiHome, HiOutlineSearch } from "react-icons/hi"
 import { RiVideoLine } from "react-icons/ri"
 import { IoPaperPlaneOutline } from "react-icons/io5"
@@ -5,22 +6,22 @@ import { RxAvatar } from "react-icons/rx"
 
 const Navbar = () => {
   return (
-    <nav className="flex py-4 w-full justify-evenly border-t-2">
-      <a to={'/'}>
+    <nav className="flex py-2 w-full justify-evenly border-t-2">
+      <NavLink to={'/'}>
         <HiHome size={30} />
-      </a>
-      <a to={'/'}>
+      </NavLink>
+      <NavLink to={'/search'}>
         <HiOutlineSearch size={30} />
-      </a>
-      <a to={'/'}>
+      </NavLink>
+      <NavLink to={'/reels'}>
         <RiVideoLine size={30} />
-      </a>
-      <a to={'/'}>
+      </NavLink>
+      <NavLink to={'/messages'}>
         <IoPaperPlaneOutline size={30} />
-      </a>
-      <a to={'/'}>
+      </NavLink>
+      <NavLink to={'/profile'}>
         <RxAvatar size={30} />
-      </a>
+      </NavLink>
     </nav>
   )
 }
