@@ -2,8 +2,9 @@ import profilePic from '../assets/images/pexels-olly-733872.jpg'
 
 const AddStory = () => {
   return (
-    <div className="w-[16.2%] flex-shrink-0 aspect-square">
-      <img src={profilePic} className='h-full rounded-full bg-cover outline outline-2 outline-offset-1 outline-rose-800' />
+    <div className="aspect-square">
+      <img src={profilePic} className='h-full rounded-full bg-cover outline outline-4 outline-offset-2 outline-rose-800' />
+      <p className='text-center py-2 text-xl font-semibold'>Your story</p>
     </div>
   )
 }
