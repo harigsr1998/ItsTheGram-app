@@ -5,36 +5,38 @@ import { BiBookmark } from "react-icons/bi"
 const Posts = ({ post }) => {
   return (
     <div>
-      <div className="p-2 px-4 flex justify-between content-center">
-        <div className="flex justify-start">
-          <div className="w-[9%] aspect-square rounded-full overflow-hidden">
-            <img src={post.link} className="overflow-clip h-fit" />
+      <div className="px-4 flex justify-between py-2">
+        <div className="flex">
+          <img src={post.link} className="w-8 h-8 rounded-full overflow-hidden mr-2 border-[1px] border-gray-500 self-center" />
+          <div>
+            <h3 className="text-sm font-semibold">{post.user}</h3>
+            <p className="text-xs">Original audio</p>
           </div>
-          <div className="pl-2 content-center">
-            <h4 className="text-xl font-semibold">{post.user}</h4>
-            <p className="text-sm">Original audio</p>
-          </div>
-          <p className="px-2 pt-1 font-bold text-lg">.</p>
-          <h3 className="pt-[6px] text-xl text-blue-700 font-semibold">Follow</h3>
+          <div className="w-1 h-1 bg-black rounded-full items-center mx-2 mt-2"></div>
+          <h3 className="text-sm text-blue-700 font-semibold">Follow</h3>
         </div>
-        <p className="text-xl font-bold pt-2">. . .</p>
+        <p className="text-xl font-bold flex items-center gap-1">
+          <div className="w-1 h-1 bg-black rounded-full"></div>
+          <div className="w-1 h-1 bg-black rounded-full"></div>
+          <div className="w-1 h-1 bg-black rounded-full"></div>
+        </p>
       </div>
       <div>
       <img src={post.link} className="w-full" />
       </div>
-      <div className="my-3 mx-4">
+      <div className="my-2 mx-4">
         <div className="flex justify-between">
           <div className="flex justify-start gap-3">
-            <TbHeart size={35} />
-            <TbMessageCircle size={35} />
-            <IoPaperPlaneOutline size={35} />
+            <TbHeart size={25} />
+            <TbMessageCircle size={25} />
+            <IoPaperPlaneOutline size={25} />
           </div>
-          <BiBookmark size={35} />
+          <BiBookmark size={25} />
         </div>
-        <p className="text-xl pt-1 font-semibold">{post.likes} likes</p>
-        <p className="text-xl pt-1 font-semibold">{post.user} {post.description}</p>
-        <p className="text-xl pt-1 text-slate-800">View all 50 comments</p>
-        <p className="text-xl pt-1 text-slate-800">3 days ago</p>
+        <p className="text-sm pt-1 font-semibold">{post.likes} likes</p>
+        <p className="text-sm pt-1 font-semibold">{post.user} {post.description}</p>
+        <p className="text-sm text-slate-800">View all 50 comments</p>
+        <p className="text-sm text-slate-800">3 days ago</p>
       </div>
     </div>
   )

@@ -15,15 +15,15 @@ import MessagesPage from "./pages/MessagesPage";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<ShowcaseLayout />}>
+      
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomePage />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/reels" element={<ReelsPage />} />
           <Route path="/profile" element={<ProfilePage />} />
         </Route>
-        <Route path="/messages" element={<MessagesPage />} />
-      </Route>
+        // <Route path="/messages" element={<MessagesPage />} />
+      
     )
   )
   
