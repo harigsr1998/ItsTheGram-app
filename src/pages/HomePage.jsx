@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <>
       <HomeHeader />
-      <div className="h-full overflow-y-scroll no-scrollbar">
+      <div className="overflow-y-scroll no-scrollbar">
         <StoriesHeader />
         {postsData.map(post => <Posts key={post.id} post={post} />)}
       </div>
