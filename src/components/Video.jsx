@@ -1,6 +1,6 @@
-const Video = ({ src }) => {
+const Video = ({ src, classes='w-full h-full object-cover' }) => {
   return (
-    <video className="w-full h-full" controls>
+    <video className={classes} controls>
       <source src={src} type="video/mp4" />
     </video>
   )

@@ -3,7 +3,7 @@ import { IoIosArrowDown } from "react-icons/io"
 
 const HomeHeader = () => {
   return (
-    <header className="flex justify-between px-2 py-1 border-b-2 bg-white sticky top-0">
+    <header className="flex justify-between px-2 py-1 border-b-2 bg-white sticky top-0 md:hidden">
       <h2 className="text-2xl font-bold font-Oleo inline-block">ItsTheGram
           <IoIosArrowDown size={20} className="inline-block ml-2"/>
       </h2>
