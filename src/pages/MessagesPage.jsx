@@ -19,7 +19,7 @@ const MessagesPage = () => {
           </div>
           <FaRegEdit size={30} />
         </div>
-        <div className="flex justify-between mx-2">
+        <div className="flex justify-between mx-2 md:text-lg">
           <p className="font-bold">Messages</p>
           <p className="text-blue-700">Request (1)</p>
         </div>

@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav 
-      className="bg-white flex md:flex-col md:px-4 md:gap-8 md:h-screen justify-around border-t-2 py-2 md:border-none md:min-w-52">
+      className="bg-white flex md:flex-col md:px-6 md:gap-8 md:h-screen justify-around border-t-2 py-2 md:border-none md:min-w-56">
       <NavLink to={'/'} className='hidden md:inline-block'>
         <h2 className="text-4xl font-bold font-Oleo text-rose-700">ItsTheGram</h2>
       </NavLink>

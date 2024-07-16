@@ -1,7 +1,7 @@
-const Video = ({ src, classes='w-full h-full object-cover' }) => {
+const Video = ({ post, classes='w-full h-full object-cover' }) => {
   return (
-    <video className={classes} controls>
-      <source src={src} type="video/mp4" />
+    <video className={classes} preload="none" poster={post.thumbnail}>
+      <source src={post.link} type="video/mp4" />
     </video>
   )
 }

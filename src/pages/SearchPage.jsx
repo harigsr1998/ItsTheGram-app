@@ -15,7 +15,7 @@ const SearchPage = () => {
             : "aspect-square overflow-hidden"}
           >
             {post.type === "image" && <img src={post.link} className="w-full h-full object-cover" />}
-            {post.type === "video" && <Video src={post.link} />}
+            {post.type === "video" && <Video post={post} />}
           </div>
         ))}
       </div>
