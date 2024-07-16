@@ -9,9 +9,9 @@ const MessagesPage = () => {
   const navigate = useNavigate()
 
   return (
-    <>
-      <div className="sticky top-0 bg-white">
-        <div className="flex justify-between p-2">
+    <div className="md:rounded-xl md:px-2 scroll-smooth">
+      <div className="sticky top-0 bg-white md:rounded-xl md:pt-2">
+        <div className="flex justify-between p-2 md:rounded-xl">
           <IoArrowBackOutline size={30} onClick={() => navigate(-1)} />
           <div className="flex">
             <h3 className="font-bold text-lg">User Name</h3>
@@ -35,7 +35,7 @@ const MessagesPage = () => {
         </div>
         ))}
       </div>
-    </>
+    </div>
   )
 }
 

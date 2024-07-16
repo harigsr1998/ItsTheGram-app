@@ -3,8 +3,8 @@ import Video from "../components/Video"
 
 const SearchPage = () => {
   return (
-    <div>
-      <div className="p-2">
+    <div className="md:px-8" id="Search Page">
+      <div className="p-4 bg-white sticky top-0 md:pt-12 md:pb-4">
         <input type="text" name="search" placeholder="Search" className="border-2 rounded-lg w-full p-1" />
       </div>
       <div className="grid grid-cols-3 gap-1">

@@ -1,17 +1,10 @@
-import Video from "./Video"
-import PostHeader from "./PostHeader"
-import PostFooter from "./PostFooter"
+import postsData from "../postsData.json"
+import Post from "../components/Post"
 
-const Posts = ({ post }) => {
+const Posts = () => {
   return (
-    <div className="md:w-2/5">
-      <PostHeader post={post} />
-      <div>
-        {post.type === "image" && <img src={post.link} className="w-full" />}
-        {post.type === "video" && <Video src={post.link} />}
-        {/* {post.type === "image-group" && } */}
-      </div>
-      <PostFooter post={post} />
+    <div className="md:w-full">
+      {postsData.map(post => <Post key={post.id} post={post} />)}
     </div>
   )
 }

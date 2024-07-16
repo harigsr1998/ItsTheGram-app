@@ -5,7 +5,7 @@ import ProfilePageIconMenu from '../components/ProfilePageIconMenu'
 
 const ProfilePage = () => {
   return (
-    <>
+    <div className='md:flex md:flex-col md:w-1/3'>
       <div className='sticky top-0 bg-white'>
         <ProfilePageHeader />
         <ProfilePageUserOverview />
@@ -20,7 +20,7 @@ const ProfilePage = () => {
           <p>hello</p>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
