@@ -5,7 +5,7 @@ import { MdOutlineSlowMotionVideo } from "react-icons/md"
 
 const Post = ({ post }) => {
   return (
-    <div className="">
+    <div className="md:mt-4">
       <PostHeader post={post} />
       <div>
         {post.type === "image" && <img src={post.link} className="w-full" loading="lazy" />}

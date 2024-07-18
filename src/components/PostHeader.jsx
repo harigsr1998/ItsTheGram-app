@@ -1,6 +1,11 @@
 import { GoKebabHorizontal } from "react-icons/go"
+import { useState } from "react";
 
 const PostHeader = ({ post }) => {
+  const [followState, setFollowState] = useState(post.followStatus)
+
+  const follow = () => setFollowState((prevState) => !prevState)
+
   return (
     <div className="px-4 flex justify-between py-2">
       <div className="flex">
@@ -11,7 +16,12 @@ const PostHeader = ({ post }) => {
           <p className="text-xs">Original audio</p>
         </div>
         <div className="w-1 h-1 bg-black rounded-full items-center mx-2 mt-2"></div>
-        <h3 className="text-sm text-blue-700 font-semibold">Follow</h3>
+        <h3 
+          className="text-sm text-blue-700 font-semibold cursor-pointer" 
+          onClick={follow}
+        >
+          {followState ? 'Unfollow' : 'Follow'}
+        </h3>
       </div>
       <GoKebabHorizontal className="text-xl mt-2"/>
     </div>

@@ -8,7 +8,7 @@ const MainLayout = () => {
 
   return (
     <div className='h-screen w-screen flex flex-col md:flex-row font-sans'>
-      <div id='outlet' className='md:w-full h-screen md:overflow-x-hidden md:grid md:grid-cols-2'>
+      <div id='outlet' className='h-screen md:overflow-x-hidden md:grid md:grid-cols-2'>
         <div className='' id='div above outlet'>
           <Outlet />
         </div>
@@ -19,7 +19,7 @@ const MainLayout = () => {
         }
       </div>
       {pathname !== '/messages' &&
-        <div className='md:order-first md:h-screen fixed w-full md:w-auto md:static bottom-0 md:bottom-auto'>
+        <div className='md:order-first md:h-screen fixed w-full md:max-w-60 md:static bottom-0 md:bottom-auto'>
           <Navbar />
         </div>
       }
