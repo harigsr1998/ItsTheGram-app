@@ -14,7 +14,7 @@ const ProfilePageUserCounts = () => {
         <p className="text-xs md:text-base">following</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProfilePageUserCounts
+export default ProfilePageUserCounts;
